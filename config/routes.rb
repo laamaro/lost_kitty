@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # As a user I can see all found pets
+  # As a user I can see details about one found pet
+  # As a user I can add a pet I found
+  # As a user I can update a pet
+  # As a user I can delete a pet
 end
