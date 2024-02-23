@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Edit <%= @pet.name %></h1>
+
+  <%= simple_form_for(@pet) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :species %>
+    <%= f.input :age %>
+    <%= f.input :size %>
+    <%= f.input :found_on %>
+    <%= f.submit %>
+  <% end %>
+</div>

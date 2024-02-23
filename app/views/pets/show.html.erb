@@ -1,0 +1,10 @@
+<h1>Details of <%= @pet.name %></h1>
+
+<p>Species: <%= @pet.species %></p>
+<p>Age: <%= @pet.age %> years</p>
+<p>Size: <%= @pet.size %></p>
+<p>Found on: <%= @pet.found_on %></p>
+
+<%= link_to 'Back to list', pets_path %>
+
+<%= link_to 'Adopt this pet!!', pet_path(@pet), data: { turbo_method: :delete, turbo_confirm: 'Do you want to adopt this pet?' } %>
