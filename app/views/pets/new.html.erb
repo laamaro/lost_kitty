@@ -1,12 +1,5 @@
 <div class="container">
   <h1>Add a pet that you found!!</h1>
 
-  <%= simple_form_for(@pet) do |f| %>
-    <%= f.input :name %>
-    <%= f.input :species %>
-    <%= f.input :age %>
-    <%= f.input :size %>
-    <%= f.input :found_on %>
-    <%= f.submit %>
-  <% end %>
+  <%= render 'form', pet: @pet %>
 </div>

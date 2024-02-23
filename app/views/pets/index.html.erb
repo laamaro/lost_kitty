@@ -1,9 +1,11 @@
-<h1>List of pets 🐶</h1>
+<div class="container">
+  <h1>List of pets 🐶</h1>
 
-<ul class="list-group">
-  <% @pets.each do |pet| %>
-    <li class="list-group-item"><%= link_to pet.name, pet_path(pet) %> - <%= link_to 'Edit', edit_pet_path(pet) %></li>
-  <% end %>
-</ul>
+  <ul class="list-group">
+    <% @pets.each do |pet| %>
+      <li class="list-group-item"><%= link_to pet.name, pet_path(pet) %> - <%= link_to 'Edit', edit_pet_path(pet) %></li>
+    <% end %>
+  </ul>
 
-<%= link_to 'Add a new pet', new_pet_path %>
+  <%= link_to 'Add a new pet', new_pet_path %>
+</div>
